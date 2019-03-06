@@ -20,7 +20,7 @@ var appRouter = function (app) {
   });
 
  app.get("/students/:num", function (req, res) {
-   var users = [];
+   var users = []; 
    var num = req.params.num;
 
    if (isFinite(num) && num  > 0 ) {
